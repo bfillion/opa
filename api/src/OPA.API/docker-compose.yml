@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  opa.api:
+    image: ${DOCKER_REGISTRY-}opa
+    build:
+      context: .
+      dockerfile: OPA.API/Dockerfile
